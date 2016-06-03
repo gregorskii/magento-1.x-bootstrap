@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Demo_Rewrites>
+            <version>1.0.0</version>
+        </Demo_Rewrites>
+    </modules>
+    <global>
+        <helpers>
+            <demo_rewrite>
+                <class>Demo_Rewrite_Helper</class>
+            </demo_rewrite>
+        </helpers>
+        <rewrite>
+            <Shop_Filter>
+                <from><![CDATA[/shop\/(.*)/]]></from>
+                <to><![CDATA[shop]]></to>
+                <complete>1</complete>
+            </Shop_Filter>
+        </rewrite>
+    </global>
+</config>

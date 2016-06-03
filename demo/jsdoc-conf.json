@@ -1,0 +1,22 @@
+{
+    "opts": {
+        "package": "./package.json",
+        "encoding": "utf8",
+        "destination": "./docs/",
+        "recurse": true,
+        "readme": "./README.md"
+    },
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "source": {
+        "includePattern": "/resources/scripts/.+\\.js(doc)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    }
+}

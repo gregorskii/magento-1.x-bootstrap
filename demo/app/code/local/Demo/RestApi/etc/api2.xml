@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<config>
+    <api2>
+        <resource_groups>
+            <demo_restapi translate="title" module="Demo_RestApi">
+                <title>Demo Rest API</title>
+                <sort_order>10</sort_order>
+            </demo_restapi>
+        </resource_groups>
+        <resources>
+
+            <!-- Improve existing resources -->
+            <product>
+                <attributes>
+                    <created_at>Created At</created_at>
+                    <updated_at>Updated At</updated_at>
+                    <has_options>Has Options</has_options>
+                    <required_options>Has Required Options</required_options>
+                </attributes>
+                <exclude_attributes>
+                    <admin>
+                        <write>
+                            <created_at>1</created_at>
+                            <updated_at>1</updated_at>
+                            <has_options>1</has_options>
+                            <required_options>1</required_options>
+                        </write>
+                    </admin>
+                </exclude_attributes>
+            </product>
+
+            <!-- New Resources -->
+            <demo_restapi_categories translate="title" module="Demo_RestApi">
+                <group>demo_restapi</group>
+                <model>demo_restapi/api2_category</model>
+                <title>Categories</title>
+                <sort_order>10</sort_order>
+                <privileges>
+                    <guest>
+                        <retrieve>1</retrieve>
+                    </guest>
+                </privileges>
+                <attributes>
+                    <entity_id>Category ID</entity_id>
+                    <name>Name</name>
+                    <parent_id>Category Parent ID</parent_id>
+                    <is_active>Active</is_active>
+                    <level>Level</level>
+                    <position>Position</position>
+                    <children>Children Ids</children>
+                    <url_key>URL key</url_key>
+                    <store_id>Store ID</store_id>
+                </attributes>
+                <routes>
+                    <route_entity>
+                        <route>/categories/:id</route>
+                        <action_type>entity</action_type>
+                    </route_entity>
+                    <route_collection>
+                        <route>/categories</route>
+                        <action_type>collection</action_type>
+                    </route_collection>
+                </routes>
+                <versions>1</versions>
+            </demo_restapi_categories>
+        </resources>
+    </api2>
+</config>

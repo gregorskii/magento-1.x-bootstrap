@@ -1,0 +1,11 @@
+<?php
+if($this->getIsHomePage()) {
+    echo '<header id="js-header">';
+} else {
+    echo '<header id="js-header" class="compact">';
+}
+?>
+    <button class="js-menu-trigger menu left-off-canvas-toggle">Menu</button>
+    <h1 class="logo">Demo Site</h1>
+    <button class="js-cart-trigger cart right-off-canvas-toggle">Cart</button>
+</header>

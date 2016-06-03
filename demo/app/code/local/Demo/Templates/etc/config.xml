@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Demo_Templates>
+            <version>0.1.0</version>
+        </Demo_Templates>
+    </modules>
+    <global>
+        <page>
+            <layouts>
+                <demo-compact-header translate="label">
+                    <label>Demo: Compact Header</label>
+                    <layout_handle>demo_compact_header</layout_handle>
+                </demo-compact-header>
+                <demo-empty translate="label">
+                    <label>Demo: Empty</label>
+                    <layout_handle>demo_empty</layout_handle>
+                </demo-empty>
+            </layouts>
+        </page>
+    </global>
+</config>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Demo_Cms>
+            <version>0.1.0</version>
+        </Demo_Cms>
+    </modules>
+    <global>
+        <models>
+            <demo_cms>
+                <class>Demo_Cms_Model</class>
+            </demo_cms>
+        </models>
+        <resources>
+            <demo_cms_setup>
+                <setup>
+                    <module>Demo_Cms</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </demo_cms_setup>
+        </resources>
+    </global>
+</config>

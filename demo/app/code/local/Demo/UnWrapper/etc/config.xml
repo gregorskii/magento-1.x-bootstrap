@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Demo_UnWrapper>
+            <version>0.1.0</version>
+        </Demo_UnWrapper>
+    </modules>
+    <global>
+        <helpers>
+            <demo_unwrapper>
+                <class>Demo_UnWrapper_Helper</class>
+            </demo_unwrapper>
+        </helpers>
+            <blocks>
+                <demo_unwrapper>
+                    <rewrite>
+                        <block>Demo_UnWrapper_Block_Cms_Block</block>
+                    </rewrite>
+                </demo_unwrapper>
+            </blocks>
+        </global>
+    </global>
+    <frontend>
+        <events>
+            <demo_unwrapper_page_render>
+                <observers>
+                    <unwrapper>
+                        <type>singleton</type>
+                        <class>Demo_UnWrapper_Model_Observer</class>
+                        <method>cmsPageRenderEvent</method>
+                    </unwrapper>
+                </observers>
+            </demo_unwrapper_page_render>
+        </events>
+    </frontend>
+</config>

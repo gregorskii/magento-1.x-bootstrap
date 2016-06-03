@@ -1,0 +1,38 @@
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+
+$white       : #FFFFFF;
+$snow        : #F9F9F9;
+$silver      : #EFEFEF;
+$jumbo       : #888888;
+$oil         : #333333;
+$black       : #000000;
+
+$primary-color: #4a8ec2;
+$secondary-color: #e7e7e7;
+$alert-color: #f04124;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+
+$body-bg: $white;
+$body-font-color: $black;
+$body-font-family: $font-family-sans-serif;
+$body-font-weight: $font-weight-normal;
+$body-font-style: normal;
+
+$font-smoothing: antialiased;
+
+$text-direction: ltr;
+$opposite-direction: right;
+$default-float: left;
+$last-child-float: $opposite-direction;
+
+$z-index-menu: 100;
+$z-index-cart: 100;
+$z-index-loader: 90;
+$z-index-module: 80;
+$z-index-dimmer: 70;

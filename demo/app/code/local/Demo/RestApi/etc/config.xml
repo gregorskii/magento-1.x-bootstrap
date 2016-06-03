@@ -1,0 +1,19 @@
+<config>
+    <modules>
+        <Demo_RestApi>
+            <version>0.1.0</version>
+        </Demo_RestApi>
+    </modules>
+    <global>
+        <helpers>
+            <demo_restapi>
+                <class>Demo_RestApi_Helper</class>
+            </demo_restapi>
+        </helpers>
+        <models>
+            <demo_restapi>
+                <class>Demo_RestApi_Model</class>
+            </demo_restapi>
+        </models>
+    </global>
+</config>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Demo_SetupCustomAttributes>
+            <version>1.0.0</version>
+        </Demo_SetupCustomAttributes>
+    </modules>
+    <global>
+        <helpers>
+            <demo_setupcustomattributes>
+                <class>Demo_SetupCustomAttributes_Helper</class>
+            </demo_setupcustomattributes>
+        </helpers>
+        <resources>
+            <add_product_attributes>
+                <setup>
+                    <module>Demo_SetupCustomAttributes</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </add_product_attributes>
+            <add_product_attributes_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </add_product_attributes_write>
+            <add_product_attributes_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </add_product_attributes_read>
+        </resources>
+    </global>
+</config>

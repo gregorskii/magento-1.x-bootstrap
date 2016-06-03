@@ -1,0 +1,11 @@
+browserSyncConfig.js
+docs
+
+skin
+!skin/
+skin/*
+!skin/frontend/
+skin/frontend/*
+!skin/frontend/demo
+skin/frontend/demo/*
+!skin/frontend/demo/.gitkeep

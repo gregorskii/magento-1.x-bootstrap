@@ -1,0 +1,30 @@
+<?php
+$_defaultCat = 3;
+$_category = Mage::getModel('catalog/category')->load($_defaultCat);
+$_subcategories = $_category->getChildrenCategories();
+
+$categories = array(
+    array(
+        'name' => 'All',
+        'slug' => 'all',
+        'id' => $_defaultCat,
+        'active' => (preg_match("/shop$/", $_SERVER['REQUEST_URI']) ? true : false)
+    )
+);
+
+foreach ($_subcategories as $cat):
+    $categories[] = array(
+        'name' => $cat->getName(),
+        'slug' => strtolower($cat->getName()),
+        'id' => intval($cat->getId()),
+        'active' => strpos($_SERVER['REQUEST_URI'], strtolower($cat->getName())) >= 1 ? true : false
+    );
+endforeach;
+?>
+<script>
+    var categories = <?php echo json_encode($categories); ?>;
+</script>
+<div id="js-shop">
+    <div id="js-shop-filters"></div>
+    <div id="js-shop-products"></div>
+</div>

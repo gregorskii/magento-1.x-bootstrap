@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Demo_SetupCustomAttributes>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Demo_SetupCustomAttributes>
+    </modules>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Demo_Rewrites>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Demo_Rewrites>
+    </modules>
+</config>
